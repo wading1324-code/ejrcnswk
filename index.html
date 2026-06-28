@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오타동 굿즈 라인 - 금융 보고서</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>🎨 오타동 굿즈 라인</h1>
+                <p class="subtitle">2026 상반기 | 총 생산량: 1,321개 | 소규모 수수제작</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#kpi">핵심 지표</a></li>
+                <li><a href="#products">상품 구성</a></li>
+                <li><a href="#specs">제작 스펙</a></li>
+                <li><a href="#analysis">비용 분석</a></li>
+                <li><a href="#breakeven">손익분기점</a></li>
+                <li><a href="#margin">마진율</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- KPI Section -->
+            <section id="kpi" class="section">
+                <h2>📊 핵심 지표 (KPI)</h2>
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <span class="kpi-label">총 제작비</span>
+                        <span class="kpi-value">₩1,456,350</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-label">전체 매출액<br>(100% 판매 시)</span>
+                        <span class="kpi-value">₩3,833,000</span>
+                    </div>
+                    <div class="kpi-card highlight">
+                        <span class="kpi-label">순이익</span>
+                        <span class="kpi-value profit">₩2,376,650</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-label">전체 마진율</span>
+                        <span class="kpi-value">62.0%</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-label">손익분기점</span>
+                        <span class="kpi-value">약 38%</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products Section -->
+            <section id="products" class="section">
+                <h2>📦 상품 구성 현황</h2>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>상품명</th>
+                                <th>타입 수</th>
+                                <th>제작수량</th>
+                                <th>제작비</th>
+                                <th>단가</th>
+                                <th>판매가</th>
+                                <th>마진율</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🔑 아크릴 키링</td>
+                                <td>7</td>
+                                <td>210개</td>
+                                <td>₩625,800</td>
+                                <td>₩2,980</td>
+                                <td>₩10,000</td>
+                                <td><span class="margin-high">70.2%</span></td>
+                            </tr>
+                            <tr>
+                                <td>🏠 아크릴 코롯토</td>
+                                <td>4</td>
+                                <td>80개</td>
+                                <td>₩328,000</td>
+                                <td>₩4,100</td>
+                                <td>₩10,000</td>
+                                <td><span class="margin-mid">59.0%</span></td>
+                            </tr>
+                            <tr>
+                                <td>📮 엽서</td>
+                                <td>5</td>
+                                <td>170개</td>
+                                <td>₩43,600</td>
+                                <td>₩256</td>
+                                <td>₩1,000</td>
+                                <td><span class="margin-high">74.4%</span></td>
+                            </tr>
+                            <tr>
+                                <td>✂️ 칼선스티커</td>
+                                <td>3</td>
+                                <td>81개</td>
+                                <td>₩78,450</td>
+                                <td>₩968</td>
+                                <td>₩3,000</td>
+                                <td><span class="margin-high">67.7%</span></td>
+                            </tr>
+                            <tr>
+                                <td>🎀 띠부씰</td>
+                                <td>20</td>
+                                <td>600개</td>
+                                <td>₩378,000</td>
+                                <td>₩630</td>
+                                <td>₩3,000</td>
+                                <td><span class="margin-highest">79.0%</span></td>
+                            </tr>
+                            <tr class="consumable">
+                                <td>📬 OPP 봉투</td>
+                                <td>—</td>
+                                <td>100세트</td>
+                                <td>₩2,500</td>
+                                <td>₩25</td>
+                                <td>—</td>
+                                <td>소모품</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Production Specs Section -->
+            <section id="specs" class="section">
+                <h2>🔍 제작 상세 스펙</h2>
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <h3>🔑 아크릴 키링 (210개)</h3>
+                        <div class="spec-content">
+                            <p><strong>기본 스펙:</strong> 기본가 ₩900 | B타입 140mm 이하 | 양면 인쇄</p>
+                            <p><strong>타입 구성:</strong> 7가지 디자인 × 30개 = 210개</p>
+                            <p><strong>추가 옵션:</strong></p>
+                            <ul>
+                                <li>다량 제작 할인: 100~299개 구간 (+₩1,530/개)</li>
+                                <li>개별 OPP 포장 (+₩50/개)</li>
+                                <li>D링 실버 (+₩500/개)</li>
+                            </ul>
+                            <p><strong>총 제작비:</strong> ₩625,800</p>
+                            <p><strong>단가 구성:</strong> ₩900 + ₩1,530 + ₩50 + ₩500 = ₩2,980</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-card">
+                        <h3>🏠 아크릴 코롯토 (80개)</h3>
+                        <div class="spec-content">
+                            <p><strong>기본 스펙:</strong> 자립형 두꺼운 10T/9T | 50×50mm | 10~99개 구간</p>
+                            <p><strong>인쇄:</strong> 앞뒤 같은 그림</p>
+                            <p><strong>타입 구성:</strong> 4가지 디자인 × 20개 = 80개</p>
+                            <p><strong>추가 옵션:</strong></p>
+                            <ul>
+                                <li>낱개 OPP 포장 (+₩100/개)</li>
+                                <li>도안의뢰 4종 별도 비용: ₩40,000</li>
+                            </ul>
+                            <p><strong>총 제작비:</strong> ₩328,000</p>
+                            <p><strong>단가:</strong> ₩4,100</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-card">
+                        <h3>📮 엽서 (170개)</h3>
+                        <div class="spec-content">
+                            <p><strong>기본 스펙:</strong> 100×150mm | 머쉬멜로우 262g | 단면 | 코팅없음 | 직각</p>
+                            <p><strong>타입 구성:</strong> 5가지 디자인 × 34개 = 170개</p>
+                            <p><strong>배수 구성:</strong> 8매 × 4세트 × 5종</p>
+                            <p><strong>총 제작비:</strong> ₩43,600</p>
+                            <p><strong>단가:</strong> ₩256</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-card">
+                        <h3>✂️ 칼선스티커 (81개)</h3>
+                        <div class="spec-content">
+                            <p><strong>기본 스펙:</strong> 9×13cm | 유포지 | 무광 | 반칼</p>
+                            <p><strong>타입 구성:</strong> 3가지 디자인 × 27개 = 81개</p>
+                            <p><strong>추가 옵션:</strong></p>
+                            <ul>
+                                <li>바코드 제거 (+₩500/개)</li>
+                            </ul>
+                            <p><strong>총 제작비:</strong> ₩78,450</p>
+                            <p><strong>단가:</strong> ₩968</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-card">
+                        <h3>🎀 띠부씰 (600개)</h3>
+                        <div class="spec-content">
+                            <p><strong>기본 스펙:</strong> 40×50mm | 일반/단면 | 레트로 + 매끈 각 10종</p>
+                            <p><strong>타입 구성:</strong> 총 20가지 디자인</p>
+                            <p><strong>수량 구성:</strong> 3세트 × 20 = 600개</p>
+                            <p><strong>총 제작비:</strong> ₩378,000</p>
+                            <p><strong>단가:</strong> ₩630</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-card">
+                        <h3>📬 OPP 봉투 (100세트)</h3>
+                        <div class="spec-content">
+                            <p><strong>기본 스펙:</strong> 포장용 소모품</p>
+                            <p><strong>구성:</strong> 100매 1세트 = ₩2,500</p>
+                            <p><strong>용도:</strong> 전체 상품 포장 보조재</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cost Analysis Section -->
+            <section id="analysis" class="section">
+                <h2>💸 제작비 구성 분석</h2>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>상품명</th>
+                                <th>제작비</th>
+                                <th>비중</th>
+                                <th>판매액 (100%)</th>
+                                <th>이익액</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🎀 띠부씰</td>
+                                <td>₩378,000</td>
+                                <td><span class="percentage">25.9%</span></td>
+                                <td>₩1,800,000</td>
+                                <td class="profit-cell">₩1,422,000</td>
+                            </tr>
+                            <tr>
+                                <td>🔑 아크릴 키링</td>
+                                <td>₩625,800</td>
+                                <td><span class="percentage">42.9%</span></td>
+                                <td>₩2,100,000</td>
+                                <td class="profit-cell">₩1,474,200</td>
+                            </tr>
+                            <tr>
+                                <td>🏠 아크릴 코롯토</td>
+                                <td>₩328,000</td>
+                                <td><span class="percentage">22.5%</span></td>
+                                <td>₩800,000</td>
+                                <td class="profit-cell">₩472,000</td>
+                            </tr>
+                            <tr>
+                                <td>✂️ 칼선스티커</td>
+                                <td>₩78,450</td>
+                                <td><span class="percentage">5.4%</span></td>
+                                <td>₩243,000</td>
+                                <td class="profit-cell">₩164,550</td>
+                            </tr>
+                            <tr>
+                                <td>📮 엽서</td>
+                                <td>₩43,600</td>
+                                <td><span class="percentage">3.0%</span></td>
+                                <td>₩170,000</td>
+                                <td class="profit-cell">₩126,400</td>
+                            </tr>
+                            <tr>
+                                <td>📬 OPP 봉투</td>
+                                <td>₩2,500</td>
+                                <td><span class="percentage">0.2%</span></td>
+                                <td>—</td>
+                                <td>—</td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td><strong>합계</strong></td>
+                                <td><strong>₩1,456,350</strong></td>
+                                <td><strong>100.0%</strong></td>
+                                <td><strong>₩3,833,000</strong></td>
+                                <td class="profit-cell"><strong>₩2,376,650</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Cost Distribution Chart -->
+                <div class="chart-container">
+                    <h3>제작비 분포도</h3>
+                    <canvas id="costChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Break-Even Analysis -->
+            <section id="breakeven" class="section">
+                <h2>🎯 손익분기점 분석</h2>
+                
+                <div class="breakeven-box">
+                    <h3>계산식</h3>
+                    <div class="formula">
+                        <p><strong>손익분기점 판매율:</strong></p>
+                        <p>(총 제작비 ÷ 총 매출액 × 100)</p>
+                        <p><strong>(₩1,456,350 ÷ ₩3,833,000) × 100 = 37.98% ≈ 약 38%</strong></p>
+                    </div>
+                </div>
+
+                <div class="interpretation-box">
+                    <h3>해석</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>판매율</th>
+                                <th>상황</th>
+                                <th>손익 상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt; 38%</td>
+                                <td>판매 부진</td>
+                                <td><span class="status-loss">🔴 손실 발생</span></td>
+                            </tr>
+                            <tr>
+                                <td>= 38%</td>
+                                <td>이론적 분기점</td>
+                                <td><span class="status-neutral">🟡 손익분기</span></td>
+                            </tr>
+                            <tr>
+                                <td>&gt; 38%</td>
+                                <td>정상 판매</td>
+                                <td><span class="status-profit">🟢 이익 창출</span></td>
+                            </tr>
+                            <tr>
+                                <td>100%</td>
+                                <td>전량 판매</td>
+                                <td><span class="status-profit">🟢 최대 이익 ₩2,376,650</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="scenario-box">
+                    <h3>판매 시나리오</h3>
+                    <div class="scenario-grid">
+                        <div class="scenario-card">
+                            <span class="scenario-rate">50%</span>
+                            <p><strong>예상 매출액:</strong> ₩1,916,500</p>
+                            <p><strong>순이익:</strong> ₩460,150</p>
+                            <p class="scenario-note">안정적 수준</p>
+                        </div>
+                        <div class="scenario-card">
+                            <span class="scenario-rate">70%</span>
+                            <p><strong>예상 매출액:</strong> ₩2,683,100</p>
+                            <p><strong>순이익:</strong> ₩1,226,750</p>
+                            <p class="scenario-note">양호한 수준</p>
+                        </div>
+                        <div class="scenario-card">
+                            <span class="scenario-rate">85%</span>
+                            <p><strong>예상 매출액:</strong> ₩3,258,050</p>
+                            <p><strong>순이익:</strong> ₩1,801,700</p>
+                            <p class="scenario-note">매우 양호</p>
+                        </div>
+                        <div class="scenario-card highlight">
+                            <span class="scenario-rate">100%</span>
+                            <p><strong>예상 매출액:</strong> ₩3,833,000</p>
+                            <p><strong>순이익:</strong> ₩2,376,650</p>
+                            <p class="scenario-note">완판 (목표)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Margin Ranking -->
+            <section id="margin" class="section">
+                <h2>📈 마진율 순위</h2>
+                <div class="margin-ranking">
+                    <div class="ranking-item rank-1">
+                        <div class="ranking-badge">🥇 1위</div>
+                        <div class="ranking-details">
+                            <h4>띠부씰</h4>
+                            <p class="margin-percent"><strong>79.0%</strong></p>
+                            <p class="margin-info">단가: ₩630 | 판매가: ₩3,000</p>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item rank-2">
+                        <div class="ranking-badge">🥈 2위</div>
+                        <div class="ranking-details">
+                            <h4>엽서</h4>
+                            <p class="margin-percent"><strong>74.4%</strong></p>
+                            <p class="margin-info">단가: ₩256 | 판매가: ₩1,000</p>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item rank-3">
+                        <div class="ranking-badge">🥉 3위</div>
+                        <div class="ranking-details">
+                            <h4>아크릴 키링</h4>
+                            <p class="margin-percent"><strong>70.2%</strong></p>
+                            <p class="margin-info">단가: ₩2,980 | 판매가: ₩10,000</p>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item rank-4">
+                        <div class="ranking-badge">4위</div>
+                        <div class="ranking-details">
+                            <h4>칼선스티커</h4>
+                            <p class="margin-percent"><strong>67.7%</strong></p>
+                            <p class="margin-info">단가: ₩968 | 판매가: ₩3,000</p>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item rank-5">
+                        <div class="ranking-badge">5위</div>
+                        <div class="ranking-details">
+                            <h4>아크릴 코롯토</h4>
+                            <p class="margin-percent"><strong>59.0%</strong></p>
+                            <p class="margin-info">단가: ₩4,100 | 판매가: ₩10,000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Margin Comparison Chart -->
+                <div class="chart-container">
+                    <h3>마진율 비교</h3>
+                    <canvas id="marginChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Notes Section -->
+            <section id="notes" class="section">
+                <h2>📋 비고 및 기타 정보</h2>
+                <div class="notes-grid">
+                    <div class="note-card">
+                        <h3>⏱️ 제작 소요 기간</h3>
+                        <p>최소 2~3주 (의뢰처 및 디자인 복잡도에 따라 변동)</p>
+                    </div>
+                    <div class="note-card">
+                        <h3>📦 포장 방식</h3>
+                        <p>OPP 개별 포장 + 소량 다중포장</p>
+                    </div>
+                    <div class="note-card">
+                        <h3>🚚 배송 규격</h3>
+                        <p>제작처 기준 배송료 제외 (별도 협의)</p>
+                    </div>
+                    <div class="note-card">
+                        <h3>💱 환율 기준</h3>
+                        <p>₩1 = KRW (2026년 6월 기준)</p>
+                    </div>
+                    <div class="note-card">
+                        <h3>📊 재고 관리</h3>
+                        <p>초과 제작 없음 (정확한 주문 수량 기반)</p>
+                    </div>
+                    <div class="note-card">
+                        <h3>🔧 A/S 정책</h3>
+                        <p>불량품 교환 시 제작처 재의뢰 (추가 비용 발생 가능)</p>
+                    </div>
+                    <div class="note-card">
+                        <h3>🎨 인쇄 품질</h3>
+                        <p>일반적인 소규모 수수제작 기준 (미세한 색감 차이 가능)</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>제작 일자: 2026년 6월 28일 | 관리자: @wading1324-code | 상태: 📝 작성 완료</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
